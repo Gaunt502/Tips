@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 5
+   Review Assignment
+   
+   Author:   Daniel Dameus
+   Date:     2/13/25
+   
+   Filename: tf_print2.css
+
+   This file contains the printer styles used with the Trusted
+   Friends Parents Tips page
+
+*/
+
+
+
+/* Hidden Objects */
+   @page{
+      nav.li{
+         display: none;
+      }
+      
+      h1{
+         display: none;
+      }
+   
+      header{
+         display: none;
+      }
+   
+      #left{
+         display: none;
+      }
+   
+      footer{
+         display: none;
+      }
+   }
+
+
+/* Page Box Styles */
+   @page{
+      size: 8.5in 11in;
+      margin: 0.5in;
+   }
+
+
+/* Header Styles */
+img{
+   display: block;
+   width: 100%;
+}
+
+
+/* Typography Styles */
+   @page{
+      article h1{
+            margin-bottom: 0.2in;
+            font-size: 24pt;
+            line-height: 26pt;
+      }
+   }
+
+   @page{
+      aside h1{
+         background-color: rgb(211, 211, 211);
+         margin-top: 0.3in;
+         font-size: 18pt;
+         line-height: 20pt;
+      }
+      
+   }
+
+   @page{
+      img{
+         width: 0.8in;
+      }
+
+   }
+
+   @page{
+      p{
+         font-size: 12pt;
+         margin-top: 0.1in;
+         margin-bottom: 0.1in;
+      }
+   }
+
+/* Hypertext Styles */
+   @page{
+      a:link{
+         color: black;
+         text-decoration: none;
+         font-weight: bold;
+         word-wrap: break-word;
+      }
+   }
+
+
+/* Page Break Styles */
+   @page{
+      aside{
+         page-break-after: always;
+      }
+   }
+
+   @page{
+      ol{
+         page-break-after: avoid;
+      }
+   }
+
+   @page{
+      ul{
+         page-break-after: avoid;
+      }
+   }
+
+   @page{
+      img{
+         page-break-after: avoid;
+      }
+   }
+
+   @page{
+      p{
+         line-height: 3px;
+      }
+   }
